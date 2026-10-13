@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Mina Intressen i spel</title>
+    <style>
+        body {
+            /* Rensar marginaler och sätter full skärmhöjd */
+            margin: 0;
+            padding: 40px;
+            height: 310vh;
+            box-sizing: border-box;
+
+            /* Skapar en gradient med rött, vitt och blått som är 400% bredare än skärmen */
+            background: linear-gradient(-45deg, #cc02e7, #ed04ce, #f38202);
+            background-size: 400% 400%;
+            
+            /* Startar animationen som heter "colorShift" (tar 12 sekunder och loopar oändligt) */
+            animation: colorShift 12s ease infinite;
+        }
+
+        /* Här bestäms hur bakgrunden ska flytta på sig för att skifta färg */
+        @keyframes colorShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Styling för din text så att den syns bra mot både ljusa och mörka färger */
+        h1, p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #222; /* Mörkgrå text */
+            /* En mjuk ljus skugga runt texten gör den lättläst när bakgrunden blir mörk */
+            text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.9);
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+
+        .btn-container {
+            display: flex;
+            gap: 15px;
+            font-family: Arial, sans-serif;
+            margin-top: 20px;
+        }
+
+        .btn {
+            border: none;
+            color: white;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: opacity 0.2s;
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+        }
+
+        .red { background-color: #ecec14; }
+        .green { background-color: #40c554; }
+        .blue { background-color: #fa0186; }
+
+        img {
+            width: 40%;
+            height: 50%;
+        }
+
+        div.fixed {
+            position: fixed;
+            right: 0;
+            width: 700px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Games i like</h1>
+    <p> I go from 0/10 and explain teh games a little</p>
+    
+    
+    <div class="spel1">
+        <p>Ghost Of Tushima 10/10 </p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaav0LZ47pzZR56AWrigNObn1vg2IbBfczy8wiER2Ysw&s=10" alt="Monkey taking a screenshot of himself">
+        <p> This game is about a samurai who was thought his whole life to go by the code of samurais, but one day he has to question the book he lived by his whole life</p>
+    </div>
+    <div class="spel2">
+        <p>Dying light 9/10</p>
+        <img src="https://store-images.s-microsoft.com/image/apps.40560.63224705253913975.f86d2928-2308-41f8-ac16-0f9c2534f9f0.ea0596c1-dc7d-4532-91c7-4863b26cda47" alt="Monkey taking a screenshot of himself">
+    <p>This is a a story about how a agent went on a mission on a city in where he needed to extrac information, but in return he gets into trouble</p>
+    </div>
+
+
+
+    <div class="spel3">
+        <p>Black Myth Wukong 10/10</p>
+        <img src="https://storage-asset.msi.com/event/2024/CND/black-myth-wukong/images/kv-m.jpg" alt="Monkey taking a screenshot of himself">
+        <p>This is a a story about chinese mythologoy about wukong story, try to find out what happend in the old stories</p>
+
+    </div>
+
+
+
+    <div class="spel4">
+        <p>Demon Souls 7/10</p>
+        <img src="https://image.api.playstation.com/vulcan/img/rnd/202011/1716/zN2mjiH0WNTXwfcbRTtxyeLI.jpg" alt="Monkey taking a screenshot of himself">
+        <p>This is a story of a person who needs to collect the souls of demons who conquerd the lands, kill bosses and get their story</p>
+    </div>
+
+
+
+    <div class="spel5">
+        <p>Lies Of P 10/10</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROBAGjKS_HuspZI-NzdJ29o9CcFIiq-pAnNFsmbmjIZg&s=10" alt="Monkey taking a screenshot of himself">
+        <p>This is a a story about a puppet who needs to save the world by killing other pouppets, and maybe find out about himself, lie through you way and find out who u truly are</p>
+    </div>
+
+    <div class="btn-container">
+        
+        <!-- En knapp för att gå tillbaka till startsidan -->
+            <a href="test sida.html"><button class="btn blue">Tillbaka till startsidan</button></a>
+        </div>
+</body>
+</html>
