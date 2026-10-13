@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Website</title>
+    <style>
+        body {
+            /* Rensar marginaler och sätter full skärmhöjd */
+            margin: 0;
+            padding: 40px;
+            height: 310vh;
+            box-sizing: border-box;
+
+            /* Skapar en gradient med rött, vitt och blått som är 400% bredare än skärmen */
+            background: linear-gradient(-45deg, #000000, #8cf852, #0f6e57);
+            background-size: 400% 400%;
+            
+            /* Startar animationen som heter "colorShift" (tar 12 sekunder och loopar oändligt) */
+            animation: colorShift 12s ease infinite;
+        }
+
+        /* Här bestäms hur bakgrunden ska flytta på sig för att skifta färg */
+        @keyframes colorShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Styling för din text så att den syns bra mot både ljusa och mörka färger */
+        h1, p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #222; /* Mörkgrå text */
+            /* En mjuk ljus skugga runt texten gör den lättläst när bakgrunden blir mörk */
+            text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.9);
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+
+        .btn-container {
+            display: flex;
+            gap: 15px;
+            font-family: Arial, sans-serif;
+            margin-top: 20px;
+        }
+
+        .btn {
+            border: none;
+            color: rgb(255, 255, 255);
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: opacity 0.2s;
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+        }
+
+        .red { background-color: #13e0dd; }
+        .green { background-color: #8a360f; }
+        .blue { background-color: #970c33; }
+
+        img {
+            width: 50%;
+            height: 70%;
+        }
+
+        div.fixed {
+            position: fixed;
+            right: 0;
+            width: 700px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Snacks</h1>
+    <p>Here will you see me rate snacks from 0/10 and what i think of them</p>
+    
+    <div class="snacks1">
+        <p>watermelon 10/10</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlvD6FVBz-8JQsLcBMgP7jI0QS3lG3Tvm-VD__sQNoog&s=10" alt="Monkey taking a screenshot of himself">
+    <p>Refreshing and tasty snack for refueling your thirst and hunger</p>
+    </div>
+    <div class="snacks2">
+        <p>onigiri 9/10</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpoXX-lmcDfJWi_lstdnfnU-r4VHN7qWXgVcTpbDUmiQ&s=10" alt="Monkey taking a screenshot of himself">
+    <p>Little bit dry but very tasty and good for you health if you make it good</p>
+    </div>
+    <div class="snacks3">
+        <p>corn 8/10</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_9Pi-d3PY8-D2jlJGRpVv4RjFoQH7umgFJ0OnFy6yog&s=10">
+   <p>Depennds if u fry or boil it both ways are amazing</p>
+    </div>
+    <div class="snacks4">
+        <p>candy 10/10</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4Iap0yJL03plcWIQ_lTbxl0YpPfXzVlb9iYujuSUchw&s=10" alt="Monkey taking a screenshot of himself">
+    <p>If u pick right ones that dont make your hands sticky it can be good</p>
+    </div>
+    <div class="snacks5">
+        <p>fruit 10/10</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiaw08Zfjsv0uL8xMkF0QnOXKxESw-oUnCbPolK_29XA&s=10" alt="Monkey taking a screenshot of himself">
+   <p>Very tasty and you can never go wrong whit it and it good for you body</p>
+    </div>
+
+    
+    
+   
+    <!-- Här är dina knappar inbakade i länkar till dina nya sidor -->
+    <div class="btn-container">
+        
+        <!-- En knapp för att gå tillbaka till startsidan -->
+            <a href="test sida.html"><button class="btn blue">Tillbaka till startsidan</button></a>
+        </div>
+
+</body>
+</html>
